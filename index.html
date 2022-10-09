@@ -24,4 +24,19 @@
     const timezone = ct.getTimezone(userTimeZone);
     const country = timezone?.countries?.[0]
     console.log({country});
+
+    const dict_country_lang = {
+        "FR":"fr",
+        "VN":"de",
+        "US":"en",
+        "UK":"en",
+        "IT":"it",
+        "JP":"ja",
+        "RU":"ru",
+        "ES":"es",
+        "TH":"th",
+        "VN":"vi"
+    }
+    const lang = (dict_country_lang?.[country])??'en'
+    console.log({lang});
   </script>
